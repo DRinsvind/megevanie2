@@ -20,8 +20,8 @@ main{
 }
 button.button-action{
   display: block;
-  @include font($font,20px,500,$white);
-  padding: 15px 25px 15px 33px;
+  @include font($font,14px,700,$white);
+  padding: 10px 25px 10px 33px;
   background-color: $green;
   border-radius: 2px;
   border: none;
@@ -30,11 +30,13 @@ button.button-action{
 .color-green{
   color:$green;
 }
+
 h2.section-heading{
   text-transform: uppercase;
   @include font($font,34px,800,$dark);
   padding: 0px 0px 0px 80px;
   position: relative;
+
   &:first-letter{
     color:$green;
   }
@@ -47,8 +49,24 @@ h2.section-heading{
     left:0px;
     top:23px;
   }
+  &_version_light{
+    color:$white;
+    &:first-letter{
+      color:$lightGreen;
+    }
+    &:before{
+      background-color: $lightGreen;
+    }
+  }
   margin: 0px;
-
+  @include breakpoint(max-width 800px){
+    text-align: center;
+    font-size: 24px;
+    padding: 0px;
+    &:before{
+      display: none;
+    }
+  }
 }
 .line-point{
   width:100%;
@@ -70,13 +88,12 @@ h2.section-heading{
       transform: scale(1);
     }
   }
-  &__icon_arrows{
+  &>div{
     position: relative;
     width:60px;
     height:60px;
     margin: 0px auto 30px;
     top:-30px;
-    background-image: url(../img/need_round.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -97,12 +114,22 @@ h2.section-heading{
       animation-timing-function:linear;
     }
   }
+  &__icon_arrows{
+    background-image: url(../img/need_round.svg);
+  }
+  &__icon_question{
+    background-image: url(../img/question.svg);
+  }
 }
 .consultation-block{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  &_section_contact{
+    padding: 0px 0px 0px 80px;
+    align-items: flex-start;
+  }
 }
 .consultation-text{
   margin-bottom: 25px;
@@ -112,5 +139,51 @@ h2.section-heading{
   text-transform: uppercase;
   max-width: 830px;
   letter-spacing: 0.55px;
+  &_color_white{
+    color:$white;
+    margin-bottom: 0px;
+  }
+  &_section_contact{
+    color:$white;
+    margin: 15px 0px;
+    text-align: left;
+  }
 }
-
+.consultation-heading{
+  @include font($font,30px,800,$dark);
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 830px;
+  letter-spacing: 0.55px;
+  &_color_white{
+    color:$white;
+  }
+}
+.consultation-a{
+  @include font($font,16px,800,$lightGreen);
+  line-height: 24px;
+  text-decoration: none;
+  &:hover,&:visited,&:active{
+    color:$lightGreen;
+    text-decoration: none;
+  }
+}
+.about{
+  display: flex;
+  &>div{
+    width:50%;
+  }
+  @include breakpoint(max-width 1000px){
+    flex-direction: column;
+    &>div{
+      width:100%;
+    }
+  }
+}
+.map{
+  min-height: 650px;
+  @include breakpoint(max-width 1200px){
+    min-height: 500px;
+  }
+}

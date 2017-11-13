@@ -5,11 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/photoswipe.css">
+  <link rel="stylesheet" href="css/default-skin/default-skin.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <title>Document</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+      ymaps.ready(init);
+      var myMap,
+          myPlacemark;
 
+      function init(){
+          myMap = new ymaps.Map("map", {
+              center: [58.012237787810236,56.24385126608647],
+              zoom: 17
+          });
+
+          myPlacemark = new ymaps.Placemark([58.012237787810236,56.24385126608647], {
+              iconCaption:'улица Газеты Звезда,20'
+
+          },{
+              preset:'islands#redDotIcon'
+          });
+
+          myMap.geoObjects.add(myPlacemark);
+      }
+  </script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -156,7 +180,7 @@
   </section>
   <section class="advantage">
     <div class="container">
-      <h2 class="section-heading">Почему жители Пермского края обращаются к нам?</h2>
+      <h2 class="section-heading section-heading_version_light">Почему жители Пермского края обращаются к нам?</h2>
       <div class="row advantages-list">
         <div class="col-xl-4 col-md-6 col-12">
           <div class="advantages-item">
@@ -212,14 +236,214 @@
           </div>
         </div>
       </div>
-      <div class="line-point line-point_icon_question"></div>
+      <div class="line-point line-point_section_needs">
+        <div class="line-point__icon_question"></div>
+      </div>
       <div class="consultation-block">
-        <h5 class="consultation-heading">Остались вопросы?</h5>
-        <div class="consultation-text">Позвоните нам по телефону <a href="#" class="consultation-a color-green">8 (342) 299-45-12</a>, и мы вместе решим их</div>
+        <h5 class="consultation-heading consultation-heading_color_white">Остались вопросы?</h5>
+        <div class="consultation-text consultation-text_color_white">Позвоните нам по телефону <a href="#" class="consultation-a">8 (342) 299-45-12</a>, и мы вместе решим их</div>
       </div>
     </div>
   </section>
+  <div class="stages">
+    <div class="container">
+      <h2 class="section-heading  section-heading_version_light">этапы работы</h2>
+      <div class="stages-list">
+        <div class="stage-item">
+          <div class="stage-item__logo"></div>
+          <div class="stage-item__line">
+            <div class="stage-item__point"></div>
+          </div>
+          <div class="stage-item__text"></div>
+        </div>
+        <div class="stage-item">
+          <div class="stage-item__logo"></div>
+          <div class="stage-item__line">
+            <div class="stage-item__point"></div>
+          </div>
+          <div class="stage-item__text"></div>
+        </div>
+        <div class="stage-item">
+          <div class="stage-item__logo"></div>
+          <div class="stage-item__line">
+            <div class="stage-item__point"></div>
+          </div>
+          <div class="stage-item__text"></div>
+        </div>
+        <div class="stage-item">
+          <div class="stage-item__logo"></div>
+          <div class="stage-item__line">
+            <div class="stage-item__point"></div>
+          </div>
+          <div class="stage-item__text"></div>
+        </div>
+        <div class="stage-item">
+          <div class="stage-item__logo"></div>
+          <div class="stage-item__line">
+            <div class="stage-item__point"></div>
+          </div>
+          <div class="stage-item__text"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="team">
+    <div class="container">
+      <h2 class="section-heading  section-heading_version_light">Наша команда</h2>
+      <p class="section-text ">Главное достоинство в нашей компании – это люди, которые работают с вами</p>
+
+    </div>
+  </section>
+  <section class="certificates">
+    <div class="container">
+      <h2 class="section-heading">СЕРТИФиКАТЫ</h2>
+      <p class="section-text section-text_color_dark">Наша компания лицензирована Федеральной Службой Государственной Регистрации Кадастра
+        и Картографии</p>
+      <div class="certificates-list my-gallery"  itemscope itemtype="http://schema.org/ImageGallery">
+        <figure class="certificate-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./img/g1.png" itemprop="contentUrl" data-size="582x819">
+            <img src="./img/g1.png" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure class="certificate-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./img/g2.png" itemprop="contentUrl" data-size="582x819">
+            <img src="./img/g2.png" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure class="certificate-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./img/g3.png" itemprop="contentUrl" data-size="582x819">
+            <img src="./img/g3.png" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure class="certificate-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./img/g4.png" itemprop="contentUrl" data-size="582x819">
+            <img src="./img/g4.png" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure class="certificate-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./img/g5.png" itemprop="contentUrl" data-size="582x819">
+            <img src="./img/g5.png" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="contacts">
+      <div class="contacts-block">
+        <h2 class="section-heading section-heading_version_light">Контакты</h2>
+        <p class="section-text">Приезжайте к нам в гости</p>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <div class="contact-item__logo"><img src="./img/c1.png" alt=""></div>
+            <div class="contact-item__content">
+              <div class="contact-item__heading">Мы находимся по адресу: </div>
+              <div class="contact-item__text">ООО ПермГеоПром.<br>
+                г. Пермь, ул. Газеты Звезда,  20, 4 этаж, офис 50. </div>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="contact-item__logo"><img src="./img/c2.png" alt=""></div>
+            <div class="contact-item__content">
+              <div class="contact-item__heading">Режим работы :</div>
+              <div class="contact-item__text">пн–пт: 09:00 – 18:00</div>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="contact-item__logo"><img src="./img/c3.png" alt=""></div>
+            <div class="contact-item__content">
+              <div class="contact-item__heading">Звоните нам по телефону </div>
+              <div class="contact-item__text"><a href="" class="contact-item__a contact-item__phone">8 (342) 299-45-12</a></div>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="contact-item__logo"><img src="./img/c1.svg" alt=""></div>
+            <div class="contact-item__content">
+              <div class="contact-item__heading">Пишите нам на электронный адрес: </div>
+              <div class="contact-item__text"><a href="" class="contact-item__a">permgeoprom@yandex.ru</a></div>
+            </div>
+          </li>
+        </ul>
+        <div class="consultation-block consultation-block_section_contact">
+          <div class="consultation-text consultation-text_section_contact">И оставляйте заявку на бесплатный звонок</div>
+          <button class="button-action">ОСТАВИТЬ ЗАЯВКУ</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="map" id="map"></div>
+  </section>
 </main>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+  <!-- Background of PhotoSwipe.
+       It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg"></div>
+
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+
+    <!-- Container that holds slides.
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+
+      <div class="pswp__top-bar">
+
+        <!--  Controls are self-explanatory. Order can be changed. -->
+
+        <div class="pswp__counter"></div>
+
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 </body>
+
 <script src='js/jquery-2.2.4.min.js'></script>
+<script src="./js/photoswipe.min.js"></script>
+<script src="./js//photoswipe-ui-default.min.js"></script>
+<script src="./js/photoswipe-custom.js"></script>
 </html>

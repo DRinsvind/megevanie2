@@ -5,6 +5,27 @@
   background-position: center top;
   background-repeat: no-repeat;
 }
+.team{
+  padding: 60px 0px 50px;
+  background-image: url(../img/background-team.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  &:after{
+    content:'';
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:0;
+    background-color: rgba(0,0,0,0.64);
+  }
+  &>*{
+    z-index: 10;
+  }
+}
 .needs-list{
   margin:40px 0px 60px;
 }
@@ -94,12 +115,17 @@
     }
   }
   &__heading{
-    @include font($font,20px,800,$green);
+    @include font($font,20px,800,$lightGreen);
     margin: 0px 0px 5px;
   }
   &__text{
-    margin: 0px 0px 60px;
+    margin: 0px auto 60px;
     @include font($font,18px,400,$white);
+    text-align: center;
+    max-width: 335px;
+    @include breakpoint(max-width 800px){
+      max-width: 100%;
+    }
   }
 }
 .advantages-list{
@@ -122,7 +148,111 @@
     z-index:0;
     background-color: rgba(0,0,0,0.64);
   }
-  &>div{
+  &>*{
     z-index: 10;
   }
+}
+.about{
+  z-index: 10;
+  position: relative;
+}
+.contacts{
+  padding: 50px 0px 90px;
+  background-image: url(../img/background-contacts.png);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  &:after{
+    content:'';
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background-color: rgba(0,0,0,0.64);
+  }
+  &>div{
+    position: relative;
+    z-index: 100;
+  }
+}
+.contacts-block{
+  max-width: 610px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right:10px;
+  width:100%;
+  @include breakpoint(max-width 1000px){
+    max-width: 100%;
+  }
+}
+.section-text{
+  @include font($font,18px,400,$white);
+  margin: 0px 0px 50px;
+  text-transform: uppercase;
+  padding: 0px 0px 0px 80px;
+  @include breakpoint(max-width 800px){
+    padding: 0px;
+    text-align: center;
+  }
+  &_color_dark{
+    color:$dark;
+  }
+}
+.contact-list{
+
+}
+.contact-item{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+
+  &__logo{
+    margin: 0px 28px 0px 35px;
+  }
+  &__heading{
+    @include font($font,14px,700,$lightGreen);
+    margin: 0px;
+    text-transform: uppercase;
+  }
+  &__text{
+    @include font($font,16px,400,$white);
+    margin: 0px;
+  }
+  &__a{
+    @include font($font,16px,400,$white);
+    text-decoration: none;
+    &:hover,&:active,&:visited{
+      color:$white;
+      text-decoration: none;
+    }
+  }
+  &__phone{
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+.certificates{
+  padding: 50px 0px 60px;
+}
+.certificates-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @include breakpoint(max-width 800px){
+    justify-content: center;
+  }
+}
+.certificate-item{
+  border:8px solid black;
+  margin: 0px 10px 10px 0px;
+  @include breakpoint(max-width 800px){
+    margin: 0px 5px 10px;
+  }
+  border-radius: 2px;
+  box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.2);
 }
