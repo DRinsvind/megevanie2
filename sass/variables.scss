@@ -1,0 +1,17 @@
+//Colors
+
+$white:#FFFFFF;
+$green:#8ab211;
+$dark:#363636;
+$black:#000000;
+
+@mixin font($family-type, $size: 1rem, $weight : normal, $color : $DarkBlue){
+  font: {
+    family: $family-type;
+    size: $size;
+    weight: $weight;
+  }
+  color: $color;
+}
+
+$font: 'Open Sans', sans-serif;
