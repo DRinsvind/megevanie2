@@ -1,7 +1,6 @@
 <svg 
  xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink"
- width="13px" height="17px">
-<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
- d="M13.004,16.997 L5.966,8.500 L13.004,0.002 L7.034,0.002 L-0.004,8.500 L7.034,16.997 L13.004,16.997 Z"/>
+ width="25px" height="25px">
+<image  x="0px" y="0px" width="25px" height="25px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCw4QCABSPA3dAAABNUlEQVQ4y5XUsS/EUBzA8Z+mDeVikJDwRxi4xWKUWFyEVSK3mMUijBKDRVwMNjWQCDEwCIlYsd8mlhsuIcElBhF8Db2+e73X3nt+Hdrf79dP3uvrawX5x7FAP+J+excVYNOd+EQANBh1Az2ckcSlJ/YIJZJZlT3bR+jmmFbsE9iAx7kGKojt8QNONRDF1c5kQwOHeHZS1sAthaQen7ZZMsAMXwpUGWp1BGEcgJUU6OVRgTfG9J5Q4KHZ2iNQjV0FfiilxxcWtRmfECIIU/yq2kH7lIU19LhmEJ+qyusMmyRkJ4XuONKysrmS8Wmdb7LiKmvxk4tpGgb4pNiJCJO8tJH77FesJxPUUmTeToQi7wo80edChDk+mmQ5b++ZpRIAr4y4E2EVuMjf4X7Gt74lA3KT/yv4A3oa4o6nqE/MAAAAAElFTkSuQmCC" />
 </svg>

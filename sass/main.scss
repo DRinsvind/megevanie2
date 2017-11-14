@@ -5,6 +5,9 @@
   background-position: center top;
   background-repeat: no-repeat;
 }
+.works{
+  padding: 40px 0px 50px;
+}
 .reviews{
   padding: 60px 0px 50px;
   background-image: url(../img/background-review.png);
@@ -483,4 +486,157 @@
       color:$lightGreen;
     }
   }
+}
+.team-list{
+  width:100%;
+  padding: 0px 0px 50px;
+  .swiper-pagination-bullet{
+    width:10px;
+    height:10px;
+    border-radius: 0px;
+    background-color: $white;
+    opacity: 1;
+    &-active{
+      background-color: $lightGreen;
+    }
+  }
+}
+.team-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include breakpoint(max-width 880px){
+    flex-direction: column;
+  }
+  &__logo{
+
+    border-radius: 50%;
+    overflow: hidden;
+    width:40%;
+    border:12px solid rgba(255,255,255,.15);
+    @include breakpoint(max-width 880px){
+      width:100%;
+      max-width: 300px;
+      margin: 0px auto 20px;
+      @include breakpoint(max-width 520px){
+        max-width: 200px;
+      }
+    }
+  }
+  &__content{
+    width:50%;
+    min-height:220px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(max-width 880px){
+      width:100%;
+      min-height: 0px;
+    }
+  }
+  &__image{
+    width:100%;
+  }
+  &__heading-name{
+    @include font($font,20px,400,$lightGreen);
+    text-transform: uppercase;
+    margin: 0px 0px 0px;
+    @include breakpoint(max-width 880px){
+      text-align: center;
+    }
+  }
+  &__heading-position{
+    @include font($font,18px,400,$white);
+    margin: 0px;
+    @include breakpoint(max-width 880px){
+      text-align: center;
+    }
+  }
+  &__top-text{
+    @include font($font,18px,400,$white);
+    @include breakpoint(max-width 880px){
+      text-align: center;
+    }
+  }
+  &__bottom-text{
+    margin: auto 0px 0px;
+    @include font($font,14px,400,$white);
+    @include breakpoint(max-width 880px){
+      margin: 0px;
+      text-align: center;
+    }
+  }
+  &__outline{
+    height:2px;
+    width:80%;
+    margin: 25px 0px 20px;
+    background-image: url(../img/outline-white.svg);
+    background-position: left;
+    background-repeat: repeat-x;
+    @include breakpoint(max-width 880px){
+      margin: 15px auto;
+      max-width: 300px;
+    }
+  }
+}
+.work-list{
+  align-items: stretch;
+
+  &>.swiper-slide{
+    height:auto;
+    padding: 50px 5px 20px;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+
+
+}
+.work-item{
+  height:100%;
+  max-width: 360px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding:5px;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  position: relative;
+  &__icon{
+    background-image: url(../img/work-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:42px;
+    height:42px;
+    top:-15px;
+    left:17px;
+    position: absolute;
+  }
+  &__logo{
+    img{
+      display: block;
+      max-width: 100%;
+    }
+    margin-bottom: 5px;
+  }
+  &__heading{
+    padding-left: 7px;
+    margin: 12px 0px;
+    @include font($font,18px,700,$dark);
+  }
+  &__text{
+    padding-left: 7px;
+    margin:0px 0px 12px;
+    @include font($font,14px,400,#7e7e7e);
+    line-height: 24px;
+  }
+  &__bold-text{
+    color:$dark;
+    font-weight: 700;
+  }
+  &__price{
+    color: $lightGreen;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+.work-wrapper{
+  margin-bottom: 55px;
 }

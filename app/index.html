@@ -9,7 +9,12 @@
   <link rel="stylesheet" href="css/default-skin/default-skin.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+
+
   <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/swiper.css">
   <title>Document</title>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
   </script>
@@ -299,6 +304,79 @@
       </div>
     </div>
   </section>
+  <section class="works">
+    <div class="container">
+      <h2 class="section-heading">посмотрите на примеры работ, которые
+        мы уже выполнили</h2>
+      <div class="swiper-container work-wrapper">
+        <div class="swiper-wrapper work-list">
+          <div class="swiper-slide ">
+
+            <div class="work-item">
+              <div class="work-item__icon"></div>
+              <div class="work-item__logo"><img src="./img/w1.png" alt=""></div>
+              <div class="work-item__logo"><img src="./img/w4.png" alt=""></div>
+              <div class="work-item__content">
+                <h3 class="work-item__heading">СНТ Кукуштан</h3>
+                <p class="work-item__text">
+                  15 участков по 6 соток.<br>
+                  <span class="work-item__bold-text">Вид работ:</span> уточнение местоположения
+                  границ земельного участка.<br>
+                  <span class="work-item__bold-text">Срок:</span> 30 раб.дней.<br>
+                  <span class="work-item__bold-text">Стоимость:</span><span class="work-item__price"> 80 тыс.руб.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="work-item">
+              <div class="work-item__icon"></div>
+              <div class="work-item__logo"><img src="./img/w2.png" alt=""></div>
+              <div class="work-item__logo"><img src="./img/w4.png" alt=""></div>
+              <div class="work-item__content">
+                <h3 class="work-item__heading">ОАО "МРСК Урала"</h3>
+                <p class="work-item__text">
+                  Деревня "Кеты"<br>
+                  <span class="work-item__bold-text">Вид работ:</span>
+                  опографическая съемка для
+                  проекта электроснабжения.<br>
+                  <span class="work-item__bold-text">Срок:</span> 60 раб.дней.<br>
+                  <span class="work-item__bold-text">Стоимость:</span><span class="work-item__price"> 20 тыс.руб.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="work-item">
+              <div class="work-item__icon"></div>
+              <div class="work-item__logo"><img src="./img/w3.png" alt=""></div>
+              <div class="work-item__logo"><img src="./img/w4.png" alt=""></div>
+              <div class="work-item__content">
+                <h3 class="work-item__heading">Пермский край, Куединский район,
+                  Центральная усадьба 3-го
+                  Госконезавода</h3>
+                <p class="work-item__text">
+                  15 участков по 6 соток.<br>
+                  <span class="work-item__bold-text">Вид работ:</span>
+                  межевой план на уточнение границ земельного
+                  участка. Семь участков.<br>
+                  <span class="work-item__bold-text">Срок:</span> 30 раб.дней.<br>
+                  <span class="work-item__bold-text">Стоимость:</span><span class="work-item__price"> 6.7 тыс.руб.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line-point line-point_section_needs">
+        <div class="line-point__icon_question"></div>
+      </div>
+      <div class="consultation-block">
+        <h5 class="consultation-heading ">хотите также?</h5>
+        <div class="consultation-text ">Оставьте заявку на бесплатную консультацию</div>
+      </div>
+    </div>
+  </section>
   <section class="reviews">
     <div class="container">
       <h2 class="section-heading">
@@ -352,27 +430,56 @@
       <h2 class="section-heading  section-heading_version_light">Наша команда</h2>
       <p class="section-text ">Главное достоинство в нашей компании – это люди, которые работают с вами</p>
       <div class="row align-items-center justify-content-between flex-nowrap">
-        <div class="button-slider left-button">
+        <div class="button-slider left-button button-slider_section_team">
           <img class="" src="./img/team-left.svg" alt="">
         </div>
-        <div class="team-list">
-
-            <div class="team-item">
-              <div class="team-item__logo">
-                <img class="team-item__image" src="./img/team.png" alt="">
+        <div class="team-list swiper-container">
+              <div class="swiper-wrapper">
+                <div class="team-item swiper-slide">
+                  <div class="team-item__logo">
+                    <img class="team-item__image" src="./img/team.png" alt="">
+                  </div>
+                  <div class="team-item__content">
+                    <h2 class="team-item__heading-name">Полина Щемелева</h2>
+                    <h4 class="team-item__heading-position">инженер-землеустроитель</h4>
+                    <div class="team-item__outline"></div>
+                    <p class="team-item__top-text">Опыт 4 года и более тысячи выполненных работ</p>
+                    <p class="team-item__bottom-text">*Инженер землеустроитель – определяет границы с соседями и
+                      категорию земель вашего участка</p>
+                  </div>
+                </div>
+                <div class="team-item swiper-slide">
+                  <div class="team-item__logo">
+                    <img class="team-item__image" src="./img/team.png" alt="">
+                  </div>
+                  <div class="team-item__content">
+                    <h2 class="team-item__heading-name">Полина Щемелева</h2>
+                    <h4 class="team-item__heading-position">инженер-землеустроитель</h4>
+                    <div class="team-item__outline"></div>
+                    <p class="team-item__top-text">Опыт 4 года и более тысячи выполненных работ</p>
+                    <p class="team-item__bottom-text">*Инженер землеустроитель – определяет границы с соседями и
+                      категорию земель вашего участка</p>
+                  </div>
+                </div>
+                <div class="team-item swiper-slide">
+                  <div class="team-item__logo">
+                    <img class="team-item__image" src="./img/team.png" alt="">
+                  </div>
+                  <div class="team-item__content">
+                    <h2 class="team-item__heading-name">Полина Щемелева</h2>
+                    <h4 class="team-item__heading-position">инженер-землеустроитель</h4>
+                    <div class="team-item__outline"></div>
+                    <p class="team-item__top-text">Опыт 4 года и более тысячи выполненных работ</p>
+                    <p class="team-item__bottom-text">*Инженер землеустроитель – определяет границы с соседями и
+                      категорию земель вашего участка</p>
+                  </div>
+                </div>
               </div>
-              <div class="team-item__content">
-                <h2 class="team-item__heading-name">Полина Щемелева</h2>
-                <h4 class="team-item__heading-position">инженер-землеустроитель</h4>
-                <div class="team-item__outline"></div>
-                <p class="team-item__top-text">Опыт 4 года и более тысячи выполненных работ</p>
-                <p class="team-item__bottom-text">*Инженер землеустроитель – определяет границы с соседями и
-                  категорию земель вашего участка</p>
-              </div>
-            </div>
-
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="button-slider right-button">
+        <div class="button-slider right-button button-slider_section_team">
           <img class="" src="./img/team-right.svg" alt="">
         </div>
       </div>
@@ -527,7 +634,11 @@
 </body>
 
 <script src='js/jquery-2.2.4.min.js'></script>
+<script src="js/swiper.min.js"></script>
+<script async src="js/wow.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="./js/photoswipe.min.js"></script>
 <script src="./js//photoswipe-ui-default.min.js"></script>
 <script src="./js/photoswipe-custom.js"></script>
+<script src="./js/custom.js"></script>
 </html>

@@ -208,48 +208,21 @@ h2.section-heading{
   &.right-button{
     margin-left: 20px;
   }
+  &_section_team{
+    @include breakpoint(max-width 400px){
+      position: absolute;
+      overflow: hidden;
+      width:1px;
+      height:1px;
+      clip: rect(0 0 0 0);
+    }
+  }
 }
-.team-list{
-  width:100%;
-}
-.team-item{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  &__logo{
-    border-radius: 50%;
-    overflow: hidden;
-    width:40%;
-    border:12px solid rgba(255,255,255,.15);
-  }
-  &__content{
-    width:50%;
-    min-height:220px;
-  }
-  &__image{
-    width:100%;
-  }
-  &__heading-name{
-    @include font($font,20px,400,$lightGreen);
-    text-transform: uppercase;
-    margin: 0px 0px 0px;
-  }
-  &__heading-position{
-    @include font($font,18px,400,$white);
-  }
-  &__top-text{
-    @include font($font,18px,400,$white);
-  }
-  &__bottom-text{
-    margin-top: auto;
-    @include font($font,14px,400,$white);
-  }
-  &__outline{
-    height:2px;
-    width:80%;
-    margin: 25px 0px;
-    background-image: url(../img/outline-white.svg);
-    background-position: left;
-    background-repeat: repeat-x;
-  }
+
+.swiper-button-next,.swiper-button-prev{
+  position: absolute;
+  width:1px;
+  height:1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
