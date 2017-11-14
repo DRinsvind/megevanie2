@@ -14,6 +14,7 @@ body{
 }
 section{
   width:100%;
+  overflow: hidden;
 }
 main{
   flex: 1;
@@ -30,7 +31,9 @@ button.button-action{
 .color-green{
   color:$green;
 }
-
+.row-reverse{
+  flex-direction: row-reverse;
+}
 h2.section-heading{
   text-transform: uppercase;
   @include font($font,34px,800,$dark);
@@ -185,5 +188,37 @@ h2.section-heading{
   min-height: 650px;
   @include breakpoint(max-width 1200px){
     min-height: 500px;
+    @include breakpoint(max-width 900px){
+      height: 400px;
+      @include breakpoint(max-width 500px){
+        height: 300px;
+      }
+    }
+  }
+}
+.button-slider{
+  width:53px;
+  height:53px;
+  max-width: 53px;
+  max-height: 53px;
+  padding: 0px;
+  &.left-button{
+    margin-right: 20px;
+  }
+  &.right-button{
+    margin-left: 20px;
+  }
+}
+.team-list{
+  width:100%;
+}
+.team-item{
+
+  &__logo{
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__image{
+    width:inherit;
   }
 }
