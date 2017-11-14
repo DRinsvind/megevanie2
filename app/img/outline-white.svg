@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="2px" viewBox="0 0 8 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="outline">
+            <path d="M-0.486204999,0.486205001 C-0.486204999,1.03848975 -0.0384897498,1.486205 0.513795,1.486205 L0.513795,1.486205 C1.06607975,1.486205 1.4862056,1.03848975 1.4862056,0.486205001" id="Oval-2" fill="#FFFFFF" fill-rule="nonzero" transform="translate(0.500000, 0.986205) rotate(-90.000000) translate(-0.500000, -0.986205) "></path>
+            <path d="M6.5137944,0.486205 C6.5137944,1.03848975 6.96150965,1.486205 7.5137944,1.486205 L7.5137944,1.486205 C8.06607915,1.486205 8.486205,1.03848975 8.486205,0.486205" id="Oval-2" fill="#FFFFFF" fill-rule="nonzero" transform="translate(7.500000, 0.986205) rotate(90.000000) translate(-7.500000, -0.986205) "></path>
+            <circle id="Oval-2" fill="#FFFFFF" fill-rule="nonzero" cx="4" cy="1" r="1"></circle>
+            <rect id="Rectangle" x="0" y="0" width="8" height="2"></rect>
+        </g>
+    </g>
+</svg>
